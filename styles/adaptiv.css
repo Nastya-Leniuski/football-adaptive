@@ -1,0 +1,141 @@
+@font-face {
+	font-family: 'Source';
+	src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+html{
+    margin: 0;
+}
+body{
+    width: 100%;
+    /* width: 750px; ;
+    height: 460px ; */
+    margin: 0 ;
+
+}
+.wrapper{
+    /* position: relative;
+    min-height: 100% ; */
+    font-family: "Source";
+}
+
+.c{
+    background: url(../images/ball.png) repeat-y right;
+}
+
+header{
+    height: 40px;
+    color: blue;
+    background-color: rgb(207, 223, 252);
+    text-align: center;
+}
+
+.slogan_header{
+    padding: 6px;
+    margin: 0;
+    font-size: 22px;
+}
+nav{
+    background-color: rgb(255, 235, 119);
+    float: left;
+    width:  20%;
+    height: 560px;
+}
+nav ul{
+    padding-left: 28px;
+}
+.nav_items{
+    padding-top: 20px;
+}
+.nav_title{
+    padding: 10px;
+}
+.nav_item >a{
+    color: blue;
+}
+main{
+    width: 80%;
+    height: 560px;
+    float: right;
+    background: url(../images/ball.png) repeat-y right;
+}
+
+.banner_image{
+    width: 230px;
+    height: 140px;
+    float: left;
+    padding: 0 20px;
+}
+.main_title{
+    text-align: center;
+}
+
+.text{
+    padding: 0 20px;
+}
+
+footer{
+    
+    width: 100%;
+    height: 60px;
+    float: right;
+    color: blue;
+    background-color: rgb(207, 223, 252);
+    text-align: center;
+}
+
+.slogan_footer{
+    font-size: 22px;
+    margin: 0;
+    padding: 16px;
+}
+
+
+@media (max-width: 800px) {
+    main{
+        width: 100%;
+        height: 465px;
+        float: none;
+        background: none;
+    }
+    nav{
+        background:none;
+        float: none;
+        width:  100%;
+        height: 100%;
+    }
+    
+    .nav_item{
+        display: inline;
+        padding: 5px;
+    }
+    .nav_title{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    nav ul {
+        padding: 10px 30px;
+        margin: 0;
+    }
+    footer{
+        height: 40px;
+    }
+    .slogan_header,.slogan_footer{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+}
+@media (max-width: 520px) {
+    .banner_image{
+        clear: left;
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    main{
+        height: 100%;
+    }
+}
